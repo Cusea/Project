@@ -1,5 +1,7 @@
 <%@ page pageEncoding="UTF-8"%>
 
-	<h1 style="background-color: black; color: wheat; text-align: center;">여기는 footer</h1>
+	<footer class="container-fluid text-center">
+	  <p>Footer Text</p>
+	</footer>
 </body>
 </html>
