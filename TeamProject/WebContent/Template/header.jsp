@@ -14,30 +14,42 @@
 <link href="<%=request.getContextPath()%>/CSS/template.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<a class="navbar-brand" href="#">일본 여행</a>
-	<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">menu1 <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">menu2</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">menu3</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
-				</li>
-			</ul>
-			<form class="form-inline mt-2 my-sm-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
-	</div>
-</nav>
-	
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="col-md-4 offset-md-4 d-flex p-2">
+			<a class="navbar-brand" href="#">일본 여행</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="btn btn-warning nav-link mr-2" role="button" href="">로그인</a>
+					</li>
+					<li class="nav-item active">
+						<a class="btn btn-primary nav-link mr-2" role="button" href="">회원가입</a>
+					</li>
+					<li class="nav-item active">
+						<a class="admin btn btn-success nav-link mr-2" role="button" href="<%=request.getContextPath()%>/Admin/main.jsp" aria-pressed="true">
+							관리자 page로
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="btn nav-link align-top" role="button" href="<%=request.getContextPath()%>/testmypage.jsp">
+							<img src="<%=request.getContextPath()%>/img/user.png" class="rounded-circle btn btn-light user_icon">
+						</a>
+					</li>
+				</ul>
+			
+			
+				
+				
+			
+		</div>
+	</nav>
+<script>
+	/* $(documnet).ready(function(){
+		$("#navbarNav")
+	}); */
+</script>

@@ -1,18 +1,16 @@
 @charset "UTF-8";
-
+	/* header nav */
 	.nav {
 	    margin-bottom: 0;
 	    border-radius: 0;
     }
     
-    .row.content {height: 450px}
-    
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+    /* header에 유저icon */
+    .user_icon{
+    	height: 30px;
+    	width: 30px;
     }
-    
+    /* footer */
     footer {
       background-color: #555;
       color: white;
