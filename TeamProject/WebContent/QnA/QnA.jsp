@@ -7,7 +7,7 @@
 		</div>
 		
 		<hr>
-		<div class="qa_header_box col-sm-12 text-center">
+		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=request.getContextPath()%>/img/QnA/QnA.jpg)">
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -38,10 +38,12 @@
 			<div class="clear"></div>  <!-- clear 이건뭐여? -->
 		</div>  <!-- qa_mnu_box END -->
 		
-		<!-- 질문박스 하나당 -->
+		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";>
+				<div class="user_img" style="background-image: url(<%=request.getContextPath()%>/img/QnA/얼굴.PNG)">회원사진</div>
+				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
+				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
 				<div class="content_box">  <!-- 사진옆 -> 제목,내용,태그,날짜정보  컨텐츠박스 -->
 					<div class="subject">제목: 오사카 추천좀요</div>
@@ -62,10 +64,12 @@
 			</a>
 		</div>
 		
-		<!-- 질문박스 하나당 -->
+		
+		
+		<!-- 여기에 qa_list가 질문하기를 등록하면 이렇게 생성되야됨. box사이즈에 맞게(질문 한줄, 내용 한줄...) 클릭해야 전체 내용이 보이게 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=2">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";>
+				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
 				<div class="content_box">  <!-- 사진옆 -> 제목,내용,태그,날짜정보  컨텐츠박스 -->
 					<div class="subject">제목: 후쿠오카 추천좀요</div>
