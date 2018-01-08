@@ -7,11 +7,12 @@
 <title>WebProject</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="<%=request.getContextPath()%>/public/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
-<script src="<%=request.getContextPath()%>/public/js/jquery-3.2.1.min.js" ></script>
-<script src="<%=request.getContextPath()%>/public/js/popper.min.js" ></script>
-<script src="<%=request.getContextPath()%>/public/bootstrap-4.0.0/js/bootstrap.min.js" ></script>
-<link href="<%=request.getContextPath()%>/CSS/template.css" rel="stylesheet">
+<% String path = request.getContextPath(); %> 
+<link href="<%=path%>/public/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="<%=path%>/public/js/jquery-3.2.1.min.js" ></script>
+<script src="<%=path%>/public/js/popper.min.js" ></script>
+<script src="<%=path%>/public/bootstrap-4.0.0/js/bootstrap.min.js" ></script>
+<link href="<%=path%>/CSS/template.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -30,22 +31,18 @@
 					<li class="nav-item active">
 						<a class="btn btn-primary nav-link mr-2" role="button" href="">회원가입</a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item active align-center">
 						<a class="admin btn btn-success nav-link mr-2" role="button" href="<%=request.getContextPath()%>/Admin/main.jsp" aria-pressed="true">
 							관리자 page로
 						</a>
 					</li>
 					<li class="nav-item active">
-						<a class="btn nav-link align-top" role="button" href="<%=request.getContextPath()%>/testmypage.jsp">
-							<img src="<%=request.getContextPath()%>/img/user.png" class="rounded-circle btn btn-light user_icon">
+						<a class="btn nav-link" role="button" href="<%=request.getContextPath()%>/testmypage.jsp">
+							<img src="<%=path%>/img/user.png" class="rounded-circle btn btn-light user_icon">
 						</a>
 					</li>
 				</ul>
-			
-			
-				
-				
-			
+
 		</div>
 	</nav>
 <script>
