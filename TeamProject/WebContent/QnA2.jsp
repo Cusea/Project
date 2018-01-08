@@ -1,12 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<html>
-<head>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  <!-- 이게 있어야 돋보기 생성? (버전이 달라서 그런듯 4버전에서는 왜 없어진건가?) -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ page pageEncoding="UTF-8"%>
+
 <div class="container">
   <h2>Glyphicon Examples</h2>
   <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>    
@@ -66,6 +59,3 @@
   </div>
   
 </div>
-
-</body>
-</html>

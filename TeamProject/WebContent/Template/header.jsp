@@ -7,45 +7,18 @@
 <title>WebProject</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="public/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
-<script src="public/js/jquery-3.2.1.min.js" ></script>
-<script src="public/js/popper.min.js" ></script>
-<script src="public/bootstrap-4.0.0/js/bootstrap.min.js" ></script>
-<style>
-    .nav {
-	    margin-bottom: 0;
-	    border-radius: 0;
-    }
-    
-    .row.content {height: 450px}
-    
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-</style>
+<link href="<%=request.getContextPath()%>/public/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="<%=request.getContextPath()%>/public/js/jquery-3.2.1.min.js" ></script>
+<script src="<%=request.getContextPath()%>/public/js/popper.min.js" ></script>
+<script src="<%=request.getContextPath()%>/public/bootstrap-4.0.0/js/bootstrap.min.js" ></script>
+<link href="<%=request.getContextPath()%>/CSS/template.css" rel="stylesheet">
 </head>
 <body>
-	
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-	<a class="navbar-brand" href="#">Navbar</a>
+	<a class="navbar-brand" href="#">일본 여행</a>
 	<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
