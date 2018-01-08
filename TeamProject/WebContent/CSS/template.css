@@ -17,8 +17,14 @@
       padding: 15px;
     }
     
+    
     body{
 		background:#f8f8fa;  /* 그냥 화이트 컬러임 뭔차이라고 해논겨? */
+	}
+	/* background-image 공통사항 */
+	.back_img{
+		background-repeat: no-repeat;
+		opacity: 0.5;
 	}
 	
 	.wrap.qa{
