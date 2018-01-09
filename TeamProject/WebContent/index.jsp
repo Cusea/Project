@@ -8,7 +8,6 @@
 	<h1>rjator</h1>
 	<h1>rjator</h1>
 	<h1>rjator</h1>
-	
 </div>
 
 <a href="QnA/QnA.jsp">대현 1</a>
