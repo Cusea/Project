@@ -36,7 +36,7 @@
 					</a>
 				</li>
 				<li class="nav-item active">
-					<a class="btn nav-link" role="button" href="<%=path%>/testmypage.jsp">
+					<a class="btn nav-link" role="button" href="<%=path%>/LSH/MyPage.jsp">
 						<img src="<%=path%>/img/user.png" class="rounded-circle btn btn-light user_icon">
 					</a>
 				</li>
