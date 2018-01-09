@@ -15,15 +15,16 @@
 <link href="<%=path%>/CSS/template.css" rel="stylesheet">
 </head>
 <body>
+<header>
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<a class="navbar-brand h1" href="<%=path%>/index.jsp">일본 여행</a>
 		<div class="collapse navbar-collapse col" id="navbarNav">
-			<ul class="navbar-nav ml-auto bl">
+			<ul class="navbar-nav ml-auto bl"> <!-- class bl은 before login -->
 				<li class="nav-item active">
-					<a class="btn btn-warning nav-link mr-2" role="button" href="">로그인</a>
+					<a class="btn btn-warning nav-link mr-2 mb-2" role="button" href="">로그인</a>
 				</li>
 				<li class="nav-item active">
 					<a class="btn btn-primary nav-link mr-2" role="button" href="">회원가입</a>
@@ -43,3 +44,4 @@
 			</ul>
 		</div>
 	</nav>
+</header>

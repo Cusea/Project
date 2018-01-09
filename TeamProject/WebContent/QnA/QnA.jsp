@@ -7,7 +7,7 @@
 		</div>
 		
 		<hr>
-		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=request.getContextPath()%>/img/QnA/QnA.jpg)">
+		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=path%>/img/QnA/QnA.jpg)">
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -63,8 +63,7 @@
 				<div class="clear"></div>  <!-- 뭔가 끝날때마다 clear 해주네??? -->
 			</a>
 		</div>
-		
-		
+
 		
 		<!-- 여기에 qa_list가 질문하기를 등록하면 이렇게 생성되야됨. box사이즈에 맞게(질문 한줄, 내용 한줄...) 클릭해야 전체 내용이 보이게 -->
 		<div class="qa_list">
