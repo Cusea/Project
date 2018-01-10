@@ -1,11 +1,54 @@
 <%@ page  pageEncoding="UTF-8"%>
 
-<div class="container">
-	 <!-- 테스트용 버튼  -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	<div id="first" class="box text-center" style="background-color: blue;">
+	<br><br><br><br>
+	 
+	 <!-- 모달로 일정 만들기 시작 -->
+	<button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#myModal">
 	 일정만들기
 	</button>
 	
+	<!-- 마이페이지 일정리스트(?)로 가기 -->
+	<a href="" class="btn btn-primary  mt-5" role="button">완성된 일정보기</a>
+	<br><br>
+	</div>	
+	
+	<div class="border 1">
+			<h4>테이블</h4>
+	
+	
+	</div>
+	
+	
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">여행 제목</h5>
+      <p class="card-text">여행 태크</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">여행 제목</h5>
+      <p class="card-text">여행 태크</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">여행 제목</h5>
+      <p class="card-text">여행 태크</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 	<div class="modal fade" id="myModal">
 		<div class="modal-dialog modal-md">
 			<div class="modal-content">
@@ -23,7 +66,7 @@
 				<button class="btn dropdown-toggle" data-toggle="dropdown">
 						여기를 누르세요.
 				</button>
-			<div class="container">
+			<div>
 				<div class="dropdown">
 							<!-- 테마 5개를 정하자.~~ -->
 								<div class="dropdown-menu"> 
