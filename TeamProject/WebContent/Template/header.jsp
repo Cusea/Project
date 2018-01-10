@@ -13,6 +13,11 @@
 <script src="<%=path%>/public/js/popper.min.js" ></script>
 <script src="<%=path%>/public/bootstrap-4.0.0/js/bootstrap.min.js" ></script>
 <link href="<%=path%>/CSS/template.css" rel="stylesheet">
+<link href="<%=path%>/CSS/jds.css" rel="stylesheet">
+<link href="<%=path%>/CSS/kbj.css" rel="stylesheet">
+<link href="<%=path%>/CSS/kdh.css" rel="stylesheet">
+<link href="<%=path%>/CSS/lsh.css" rel="stylesheet">
+<link href="<%=path%>/CSS/yks.css" rel="stylesheet">
 </head>
 <body>
 <header>
