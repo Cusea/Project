@@ -95,13 +95,14 @@
 		</div>
 	</div>
 	<!-- div container 2 끝 -->
+	
 	<!-- div container 3 시작 -->
 	<div class="bg-white pt-1 mb-4">
 		<div class="container-fluid text-center">
-			<h3 class="pt-4 mx-2"><strong>어디로 갈까?</strong></h3>
+			<h3 class="pt-4"><strong>어디로 갈까?</strong></h3>
 			<p class="font-weight-light">다른 사람의 Tip에서 아이디어를 얻어보세요</p>
 		</div>
-		<div class="card-deck">
+		<div class="card-deck container-fluid">
 			<div class="row mx-auto my-2">
 				<div class="card col-sm-6" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">

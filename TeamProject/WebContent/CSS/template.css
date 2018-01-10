@@ -1,4 +1,13 @@
 @charset "UTF-8";
+	/* hr 에 색깔주기 */
+	.hr_color{
+		border: none;
+	    border-top: 1px solid white;
+	    color: #fff;
+	    background-color: #fff;
+	    width: 100%;
+	}
+	
 	/* header nav */
 	.nav {
 	    margin-bottom: 0;
@@ -10,17 +19,18 @@
     	height: 45px;
     	width: 50px;
     }
+    
     /* search icon 설정 */
     .search_icon{
    		height: 60px;
     	width: 60px;
     	padding: 0;
     }
+    
     /* footer */
     footer {
-      background-color: #555;
+      background-color: #000;
       color: white;
-      padding: 15px;
     }
    
    	/* 일정 card리스트 출력 */ 
@@ -275,22 +285,3 @@
 	    height: 22px;
 	    line-height: 22px;
 	}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
