@@ -59,3 +59,39 @@
   </div>
   
 </div>
+
+
+
+
+
+<div class="et_modal" style="overflow:hidden;">
+	<div class="et_modal_layer">
+	<div class="et_modal_bg"></div>
+		<div class="et_modal_load" style="display: none;">
+			로딩중
+		</div>
+	<div class="et_modal_window" style="width: 550px; height: 499px; margin-top: -250px; top: 50%; overflow: hidden; display: block;">
+		<iframe id="modal_view" scrolling="no" border="0" frameborder="0" class="et_iframe" src="/modal/inquiry" style="overflow:hidden;" allowtransparency="true"></iframe>
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

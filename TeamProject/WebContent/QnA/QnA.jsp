@@ -2,12 +2,12 @@
 
 	<div class="wrap qa col-sm-12 text-center jumbotron">  <!-- jumbotron (뭔가 회색배경을 주는데?) -->
 		<div class="qa_nav_box col-sm-12 text-center">
-			<a href="#">일본여행사이트</a> >
+			<a href="/TeamProject/index.jsp">일본여행사이트</a> >
 			<span>QnA</span>
 		</div>
 		
 		<hr>
-		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=request.getContextPath()%>/img/QnA/QnA.jpg)">
+		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=path%>/img/QnA/QnA.jpg)">
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -31,17 +31,17 @@
 			<div class="qa_mnu_line">
 				<!-- 가로막는 짝대기 하나 추가 -->
 			</div>
-			<div class="q_btn" onclick="et_modal('550px','500px','1','0','/modal/inquiry','2','1');">  <!-- et_modal은 어딨는겨? (히든 되 있었네) -->
-				<!-- <button type="button" class="q_btn btn btn-warning">질문하기</button> -->  <!-- 왜 qa_list 쪽에 달라 붙는거여??? -->
-				질문하기
+			<div class="q_btn" onclick="et_modal('550px','500px','1','0','/modal/inquery','2','1');">  <!-- et_modal은 어딨는겨? (히든 되 있었네) -->
+				 질문하기 
 			</div>
 			<div class="clear"></div>  <!-- clear 이건뭐여? -->
 		</div>  <!-- qa_mnu_box END -->
 		
+		
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<div class="user_img" style="background-image: url(<%=request.getContextPath()%>/img/QnA/얼굴.PNG)">회원사진</div>
+				<div class="user_img" style="background-image: url(<%=path%>/img/QnA/얼굴.PNG)">회원사진</div>
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
@@ -56,7 +56,7 @@
 						<div class="user_name">KDH</div>
 						<div class="info_line"></div>  <!-- 뭔 라인이여??? -->
 						<div class="write_datetime">2018-01-06 18:46</div>
-						<div class="a_cnt">1</div>  <!-- 답변 수 -->
+						<div class="a_cnt" style="background-image: url(<%=path%>/img/QnA/qa_btn.gif)">1</div>  <!-- 답변 수 -->
 						<div class="clear"></div>  <!-- ??? -->
 					</div>
 				</div>
@@ -82,17 +82,59 @@
 						<div class="user_name">HANBITCAMP</div>
 						<div class="info_line"></div>  <!-- 뭔 라인이여??? -->
 						<div class="write_datetime">2018-01-07 16:06</div>
-						<div class="a_cnt">3</div>  <!-- 답변 수 -->
+						<div class="a_cnt" style="background-image: url(<%=path%>/img/QnA/qa_btn.gif)">3</div>  <!-- 답변 수 -->
 						<div class="clear"></div>  <!-- ??? -->
 					</div>
 				</div>
 				<div class="clear"></div>  <!-- 뭔가 끝날때마다 clear 해주네??? -->
 			</a>
 			<div class="more_btn" onclick="get_list('2');$(this).remove();">더보기</div>  <!-- 더보기 버튼 -->
-			
 		</div>  <!-- qa list end -->
+			
 	</div>  <!-- wrap qa end -->
 	
+	<!-- 모달을 만들어보자 (질문하기) -->
+	<div class="et_modal" style="overflow: hidden;">
+		<!-- ??? -->
+	</div>
+	
+	<!-- 질문하기 실제 창 (다른 페이지 에서 하는건가???) -->
+	<div class="modal_box">
+		<div class="title_box">
+			<span id="title">질문하기</span>
+			<img src="<%=path%>/img/QnA/modal_close_btn.gif" class="modal_btn_close rounded" alt onclick="et_modal_close();">
+		</div>
+		<div class="modal_content">
+			<div class="inquery_box">
+				<div class="inquery_title">
+					제목
+				</div>
+				<div class="input_box">
+					<input type="text" class="inquery_subject" maxlength="30">
+					<div class="input_length" data-id="subject" data-class="inquery_subject" data-length="30">
+						0/30
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="inquery_box">
+				<div class="inquery_title">
+					내용
+				</div>
+				<div class="input_box">
+					<textarea name id cols="30" rows="10" class="inquery_content" maxlength="1000">
+					
+					</textarea>
+					<div class="clear"></div>
+					<div class="input_length" data-id="content" data-class="inquery_content" data-length="1000">
+						0/1000
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
 	
 	
 	
