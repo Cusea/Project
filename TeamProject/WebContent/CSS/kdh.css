@@ -1,1 +1,7 @@
 @charset "UTF-8";
+
+element.style {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

@@ -96,7 +96,7 @@
 	}
 	
 	.qa_search{
-		background:url('/res/img/common/gnb/search_icon.png') no-repeat white;  /* 이게 돋보기 아이콘 인가 보네??? 근데 오른쪽으로 붙어있지??? 부트스트랩3버전만 가능? */
+		background:url(/img/QnA/search_icon.png) no-repeat white;  /* 돋보기 아이콘 */
 		background-position:98% center;
 		border:none;
 		width:100%;
@@ -162,7 +162,7 @@
 	/* 질문하기 버튼 */
     .q_btn{    
 		float:right;
-		color:white;
+		/* color:white;
 		padding-left:20px;
 		padding-right:20px;
 		line-height:30px;
@@ -172,8 +172,8 @@
 		border:1px solid #f7870f;
 		background:#ff9320;
 		display:inline-block;
-		cursor:pointer;
-		margin-top:12px;
+		cursor:pointer; */
+		margin-top:9px;
 	}  
 	.qa_list{
 		padding-bottom:10px;
@@ -208,11 +208,11 @@
 	}
 	
 	.user_img{  /* 질문한 회원사진 */
-		width:90px;
-		height:90px;
+		width:80px;
+		height:80px;
 		float:left;
 		border-radius:50%;
-		margin-right:8px;
+		margin-right:15px;
 	}
 	
 	/* .content_box {  질문 게시판 안에 내용들 box 인데 왜 다 꺠지나??

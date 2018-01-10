@@ -1,13 +1,13 @@
 <%@ page  pageEncoding="UTF-8"%>
 
-	<div class="wrap qa col-sm-12 text-center jumbotron">  <!-- jumbotron (뭔가 회색배경을 주는데?) -->
+	<div class="wrap qa col-sm-12 text-center jumbotron container">  <!-- jumbotron (뭔가 회색배경을 주는데?) -->
 		<div class="qa_nav_box col-sm-12 text-center">
 			<a href="/TeamProject/index.jsp">일본여행사이트</a> >
 			<span>QnA</span>
 		</div>
 		
 		<hr>
-		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=path%>/img/QnA/QnA.jpg)">
+		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=path%>/img/QnA/qa_hbg.jpg)">
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -17,8 +17,8 @@
 				아! 오사카, 후쿠오카만 가능해요.
 			</div>
 			<div class="search_box">
-				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" value="">
-				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>  <!-- 돋보기가 안생기는데??? -->
+				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" style="background-image: url(<%=path%>/img/QnA/search_icon.png)" value="">
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 				<!-- <p>Search icon: <span class="glyphicon glyphicon-search"></span></p> -->
 				<div class="tags"></div>  <!-- 태그로 검색하니까 해논건가??? -->  
 			</div>
@@ -31,9 +31,12 @@
 			<div class="qa_mnu_line">
 				<!-- 가로막는 짝대기 하나 추가 -->
 			</div>
-			<div class="q_btn" onclick="et_modal('550px','500px','1','0','/modal/inquery','2','1');">  <!-- et_modal은 어딨는겨? (히든 되 있었네) -->
+			<button id="" type="button" class="btn btn-primary q_btn" data-toggle="modal" data-target="#myModal">
+	 	    	질문하기
+			</button>
+			<!-- <div class="q_btn" onclick="modal_box('550px','500px','1','0','/modal/inquery','2','1');">  et_modal은 어딨는겨? (히든 되 있었네)
 				 질문하기 
-			</div>
+			</div> -->
 			<div class="clear"></div>  <!-- clear 이건뭐여? -->
 		</div>  <!-- qa_mnu_box END -->
 		
@@ -41,7 +44,7 @@
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<div class="user_img" style="background-image: url(<%=path%>/img/QnA/얼굴.PNG)">회원사진</div>
+				<div class="user_img" style="background-image: url(<%=path%>/img/QnA/작은표범.png)"></div>
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
@@ -92,13 +95,17 @@
 			
 	</div>  <!-- wrap qa end -->
 	
-	<!-- 모달을 만들어보자 (질문하기) -->
+	
+	
+	
+	
+	<%-- <!-- 모달을 만들어보자 (질문하기) -->
 	<div class="et_modal" style="overflow: hidden;">
 		<!-- ??? -->
 	</div>
 	
 	<!-- 질문하기 실제 창 (다른 페이지 에서 하는건가???) -->
-	<div class="modal_box">
+	<div class="modal_box" style="overflow: hidden;">
 		<div class="title_box">
 			<span id="title">질문하기</span>
 			<img src="<%=path%>/img/QnA/modal_close_btn.gif" class="modal_btn_close rounded" alt onclick="et_modal_close();">
@@ -133,22 +140,30 @@
 			</div>
 		</div>
 		
-	</div>
+	</div> --%>
 	
 	
 	
-<!-- 질문하기를 모달로 이렇게 해야되는데??? -->	
-<div class="container">
-	<!-- Button to Open the Modal -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-	  Open modal
-	</button>
-	<!-- The Modal -->
-	<div class="modal fade" id="myModal">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal">모달입니다 엑스표 ->> &times;</button>
-			</div>
+
+<!-- The Modal -->
+<!-- fade (스윽~ 하고 나오는거) -->
+<div class="modal fade" id="myModal">  
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+		<div class="modal-footer">
+			<button type="button" class="close" data-dismiss="modal">모달입니다 엑스표 ->> &times;</button>
+		</div>
+		<div class="modal_title_box">
+			<input type="text"> 제목 입니다.
+		</div>
+		<div class="modal_body_box">
+			<textarea rows="10" cols="30">
+				내용 입니다. 
+			</textarea>
+		</div>
+		<div class="modal_footer_box">
+			<input type="text"> 태그 넣을건데
+		</div>
 		</div>
 	</div>
 </div>
