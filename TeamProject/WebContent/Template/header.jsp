@@ -25,11 +25,6 @@
 			
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="admin btn btn-danger nav-link mr-2" role="button" href="<%=request.getContextPath()%>/LSH/MyPage.jsp" aria-pressed="true">
-							My Page
-						</a>
-					</li>
-					<li class="nav-item active">
 						<a class="btn btn-warning nav-link mr-2" role="button" href="">로그인</a>
 					</li>
 					<li class="nav-item active">
@@ -37,6 +32,7 @@
 					</li>
 					<li class="nav-item active">
 						<a class="admin btn btn-success nav-link mr-2" role="button" href="<%=request.getContextPath()%>/Admin/main.jsp" aria-pressed="true">
+						
 							관리자 page로
 						</a>
 					</li>
