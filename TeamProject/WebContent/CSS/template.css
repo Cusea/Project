@@ -126,6 +126,14 @@
 		display:none;
 	}
 	
+	.qa_mnu {  /* 게시판 위에 새로운 질문, 질문하기 box */  /* 이거때문에 질문하기가 내려가 있었음 */
+	    float: left;
+	    font-size: 14px;
+	    color: #555555;
+	    font-weight: bold;
+	    cursor: pointer;
+	}
+	
 	.qa_mnu_box{  /* 질문하기 */
 		border-top:1px solid #3f7ab7;
 		border-bottom:1px solid #e3e3e3;
@@ -230,42 +238,42 @@
 	}
     
     .info_box {  /* 게시판 이름,날짜,댓글수 box */
-    width: 100%;
-    padding-top: 10px;
+	    width: 100%;
+	    padding-top: 10px;
 	}
     
     .user_name {  /* 게시판 유저이름(질문자) */
-    float: left;
-    font-size: 13px;
-    color: #555555;
-    font-weight: bold;
+	    float: left;
+	    font-size: 13px;
+	    color: #555555;
+	    font-weight: bold;
 	}
     
     .info_line {  /* 게시판 유저이름 옆의 세로줄 */
-    float: left;
-    width: 1px;
-    background: #cfcfcf;
-    height: 10px;
-    margin-top: 1px;
-    margin-left: 10px;
-    margin-right: 10px;
+	    float: left;
+	    width: 1px;
+	    background: #cfcfcf;
+	    height: 10px;
+	    margin-top: 1px;
+	    margin-left: 10px;
+	    margin-right: 10px;
 	}
     
     .write_datetime {  /* 게시판 유저이름 옆의 세로줄 옆의 날짜 (질문작성 날짜) */
-    color: #1a7ad9;
-    font-size: 13px;
-    float: left;
+	    color: #1a7ad9;
+	    font-size: 13px;
+	    float: left;
 	}
     
     .a_cnt {  /* 댓글수 */
-    float: right;
-    color: #555555;
-    font-size: 14px;
-    padding-left: 29px;
-    /* background: url(/res/img/mypage/qa/qa_btn.gif) no-repeat; */  /* 댓글 아이콘 이겠지?? */
-    background-position: center left;  /* 센터 래프트?? 중앙 왼쪽? */
-    height: 20px;
-    line-height: 20px;
+	    float: right;
+	    color: #004085;
+	    font-size: 17px;
+	    padding-left: 29px;
+	    background: url(/img/QnA/qa_btn.gif) no-repeat;  /* 댓글 이미지 (반복없음) */
+	    background-position: center left;  /* 센터 래프트?? 중앙 왼쪽? */
+	    height: 22px;
+	    line-height: 22px;
 	}
     
     

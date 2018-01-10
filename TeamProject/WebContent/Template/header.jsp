@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <% String path = request.getContextPath(); %> 
 <link href="<%=path%>/public/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="<%=path%>/public/js/jquery-3.2.1.min.js" ></script>
 <script src="<%=path%>/public/js/popper.min.js" ></script>
 <script src="<%=path%>/public/bootstrap-4.0.0/js/bootstrap.min.js" ></script>
