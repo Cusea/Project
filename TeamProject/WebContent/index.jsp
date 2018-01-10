@@ -1,4 +1,5 @@
 <%@ page pageEncoding="UTF-8"%>
+
 	<!-- header 아래 부분 -->
 	<div class="back_img" style="background-image:url(<%=path%>/img/hosang/japan.jpg);">
 		<div class="text-center" style="color:white;">
@@ -102,21 +103,21 @@
 		</div>
 		<div class="card-deck">
 			<div class="row mx-auto my-2">
-				<div class="card col-sm-6" onclick="location.href='<%=path%>/index.jsp';">
+				<div class="card col-sm-6" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">
 					<div class="card-body">
 						<h5 class="text-primary card-title"><strong>Tip 제목</strong></h5>
 						<p class="card-text">Tip 내용들....~~~~~~~~~~~~~~~~</p>
 					</div>
 				</div>
-				<div class="card col-sm-3" onclick="location.href='<%=path%>/index.jsp';">
+				<div class="card col-sm-3" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">
 					<div class="card-body">
 						<h5 class="text-primary card-title"><strong>Tip 제목</strong></h5>
 						<p class="card-text">Tip 내용들....~~~~~~~~~~~~~~~~</p>
 					</div>
 				</div>
-				<div class="card col-sm-3" onclick="location.href='<%=path%>/index.jsp';">
+				<div class="card col-sm-3" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">
 					<div class="card-body">
 						<h5 class="text-primary card-title"><strong>Tip 제목</strong></h5>
@@ -125,21 +126,21 @@
 				</div>
 			</div>
 			<div class="row mx-auto my-2">
-				<div class="card col-sm-3" onclick="location.href='<%=path%>/index.jsp';">
+				<div class="card col-sm-3" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">
 					<div class="card-body">
 						<h5 class="text-primary card-title"><strong>Tip 제목</strong></h5>
 						<p class="card-text">Tip 내용들....~~~~~~~~~~~~~~~~</p>
 					</div>
 				</div>
-				<div class="card col-sm-3" onclick="location.href='<%=path%>/index.jsp';">
+				<div class="card col-sm-3" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">
 					<div class="card-body">
 						<h5 class="text-primary card-title"><strong>Tip 제목</strong></h5>
 						<p class="card-text">Tip 내용들....~~~~~~~~~~~~~~~~</p>
 					</div>
 				</div>
-				<div class="card col-sm-6" onclick="location.href='<%=path%>/index.jsp';">
+				<div class="card col-sm-6" onclick="location.href='<%=path%>/KBJ/TipofTravel.jsp';">
 					<img class="card-img-top" src="<%=path%>/img/hosang/imgbox.PNG" alt="">
 					<div class="card-body">
 						<h5 class="text-primary card-title"><strong>Tip 제목</strong></h5>
@@ -149,3 +150,4 @@
 			</div>
 		</div>
 	</div>
+
