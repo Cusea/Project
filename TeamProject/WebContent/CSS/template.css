@@ -1,11 +1,7 @@
 @charset "UTF-8";
-	/* hr 에 색깔주기 */
-	.hr_color{
-		border: none;
-	    border-top: 1px solid white;
-	    color: #fff;
-	    background-color: #fff;
-	    width: 100%;
+	/* 서비스센터 버튼 */
+	.sc_btn{
+		position: fixed;
 	}
 	
 	/* header nav */
@@ -18,6 +14,16 @@
     .user_icon{
     	height: 45px;
     	width: 50px;
+    }
+    
+    /* 서비스 센터 플젝 소개 bg */
+    .intro_bg{
+    	background-repeat: no-repeat;
+		width: 80%;
+		height: 500px;
+		background-position: center center;
+		background-size: cover;
+		opacity: 0.8;
     }
     
     /* search icon 설정 */
@@ -44,11 +50,19 @@
 		background:#f8f8fa;  /* 그냥 화이트 컬러임 뭔차이라고 해논겨? */
 	}
 	
-	/* background-image 공통사항 */
-	.back_img{
+	/* index page background-image */
+	.index_back_img{
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 450px;
+		background-position: center center;
+		background-size: cover;
+	}
+	/* serviceCenter background-image */
+	.sc_back_img{
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 300px;
 		background-position: center center;
 		background-size: cover;
 	}

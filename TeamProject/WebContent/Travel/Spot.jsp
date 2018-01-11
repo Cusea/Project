@@ -9,15 +9,15 @@
 	</div>
 	<div class="col-sm-3 row align-end bg-primary">
 		<div>
-			<img alt="리뷰" src="<%=path%>/img/yks/icons/spot_review_btn.png">
+			<img alt="리뷰" src="${contextpath}/img/yks/icons/spot_review_btn.png">
 			<caption>리뷰쓰기</caption>
 		</div>
 		<div>
-			<img alt="클립" src="<%=path%>/img/yks/icons/spot_clip_btn.png">
+			<img alt="클립" src="${contextpath}/img/yks/icons/spot_clip_btn.png">
 			<span>클립</span>
 		</div>
 		<div>
-			<img alt="일정" src="<%=path%>/img/yks/icons/spot_padd_btn.png">
+			<img alt="일정" src="${contextpath}/img/yks/icons/spot_padd_btn.png">
 			<span>일정에 넣기</span>
 		</div>
 	</div>

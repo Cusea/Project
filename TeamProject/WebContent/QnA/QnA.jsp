@@ -7,7 +7,7 @@
 		</div>
 		
 		<hr>
-		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(<%=path%>/img/QnA/QnA.jpg)">
+		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(${contextpath}/img/QnA/QnA.jpg)">
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -41,7 +41,7 @@
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<div class="user_img" style="background-image: url(<%=path%>/img/QnA/얼굴.PNG)">회원사진</div>
+				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/얼굴.PNG)">회원사진</div>
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
@@ -56,7 +56,7 @@
 						<div class="user_name">KDH</div>
 						<div class="info_line"></div>  <!-- 뭔 라인이여??? -->
 						<div class="write_datetime">2018-01-06 18:46</div>
-						<div class="a_cnt" style="background-image: url(<%=path%>/img/QnA/qa_btn.gif)">1</div>  <!-- 답변 수 -->
+						<div class="a_cnt" style="background-image: url(${contextpath}/img/QnA/qa_btn.gif)">1</div>  <!-- 답변 수 -->
 						<div class="clear"></div>  <!-- ??? -->
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 						<div class="user_name">HANBITCAMP</div>
 						<div class="info_line"></div>  <!-- 뭔 라인이여??? -->
 						<div class="write_datetime">2018-01-07 16:06</div>
-						<div class="a_cnt" style="background-image: url(<%=path%>/img/QnA/qa_btn.gif)">3</div>  <!-- 답변 수 -->
+						<div class="a_cnt" style="background-image: url(${contextpath}/img/QnA/qa_btn.gif)">3</div>  <!-- 답변 수 -->
 						<div class="clear"></div>  <!-- ??? -->
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 	<div class="modal_box">
 		<div class="title_box">
 			<span id="title">질문하기</span>
-			<img src="<%=path%>/img/QnA/modal_close_btn.gif" class="modal_btn_close rounded" alt onclick="et_modal_close();">
+			<img src="${contextpath}/img/QnA/modal_close_btn.gif" class="modal_btn_close rounded" alt onclick="et_modal_close();">
 		</div>
 		<div class="modal_content">
 			<div class="inquery_box">

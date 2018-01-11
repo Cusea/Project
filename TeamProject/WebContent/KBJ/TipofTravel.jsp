@@ -22,4 +22,4 @@
 	<script>
 		
 	</script>
-<img src="<%=path%>/img/user.png" class="rounded-circle btn btn-light user_icon">
+<img src="${contextpath}/img/user.png" class="rounded-circle btn btn-light user_icon">
