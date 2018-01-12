@@ -22,13 +22,13 @@
 				<a class="list-group-item list-group-item-action" id="list-faq-list" href='${contextpath}/ServiceCenter/faq.jsp' aria-controls="">
 					FAQ
 				</a>
-				<a class="list-group-item list-group-item-action active" id="list-contactUs-list" href='${contextpath}/ServiceCenter/ContactUs.jsp' aria-controls="">
+				<a class="list-group-item list-group-item-action" id="list-contactUs-list" href='${contextpath}/ServiceCenter/ContactUs.jsp' aria-controls="">
 					문의하기
 				</a>
 				<a class="list-group-item list-group-item-action" id="list-terms-list"  href='${contextpath}/ServiceCenter/terms.jsp' aria-controls="">
 					이용약관
 				</a>
-				<a class="list-group-item list-group-item-action" id="list-pp-list" href='${contextpath}/ServiceCenter/pp.jsp' aria-controls="">
+				<a class="list-group-item list-group-item-action active" id="list-pp-list" href='${contextpath}/ServiceCenter/pp.jsp' aria-controls="">
 					개인정보 처리방침	<!-- pp는 Privacy policy -->
 				</a>
 			</div>
@@ -119,7 +119,7 @@
 				<!-- FAQ 끝 -->
 				
 				<!-- 문의하기 시작 -->
-				<div class="tab-pane fade  show active" id="list-contactUs" role="tabpanel" aria-labelledby="list-contactUs-list" style="height: 600px;">
+				<div class="tab-pane fade" id="list-contactUs" role="tabpanel" aria-labelledby="list-contactUs-list" style="height: 600px;">
 					<div class="border border-secondary border-top-0 border-left-0 border-right-0 py-2 pl-3">
 						<h3 class="font-weight-bold mb-3">문의하기</h3>
 						<h5 class="text-secondary">서비스 이용에 관한 문의하항이나 개선 아이디어를 제안해 주세요</h5>
@@ -332,7 +332,7 @@
 				<!-- 이용 약관 끝 -->
 				
 				<!-- 개인정보 처리방침 시작 -->
-				<div class="tab-pane fade" id="list-pp" role="tabpanel" aria-labelledby="list-pp-list">
+				<div class="tab-pane fade show active" id="list-pp" role="tabpanel" aria-labelledby="list-pp-list">
 					<h3 class="font-weight-bold mb-3">개인정보 처리 방침</h3>
 					<div class="border border-secondary border-top-0 border-left-0 border-right-0 py-2 pl-3 h4">기본 사항</div>
 					<div>

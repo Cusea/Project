@@ -16,13 +16,13 @@
 		<!-- 서비스 센터 사이드 버튼 -->
 		<div class="col-sm-3 row justify-content-end sc_btn">
 			<div class="col-8 list-group text-center " id="list-tab">
-				<a class="list-group-item list-group-item-action" id="list-intro-list" href='${contextpath}/ServiceCenter/intro.jsp' aria-controls="">
+				<a class="list-group-item list-group-item-action active" id="list-intro-list" href='${contextpath}/ServiceCenter/intro.jsp' aria-controls="">
 					프로젝트 소개
 				</a>
 				<a class="list-group-item list-group-item-action" id="list-faq-list" href='${contextpath}/ServiceCenter/faq.jsp' aria-controls="">
 					FAQ
 				</a>
-				<a class="list-group-item list-group-item-action active" id="list-contactUs-list" href='${contextpath}/ServiceCenter/ContactUs.jsp' aria-controls="">
+				<a class="list-group-item list-group-item-action" id="list-contactUs-list" href='${contextpath}/ServiceCenter/ContactUs.jsp' aria-controls="">
 					문의하기
 				</a>
 				<a class="list-group-item list-group-item-action" id="list-terms-list"  href='${contextpath}/ServiceCenter/terms.jsp' aria-controls="">
@@ -38,7 +38,7 @@
 		<div class="col-sm-9 offset-sm-3" >
 			<div class="tab-content" id="nav-tabContent">
 				<!-- 플젝 소개 시작 -->
-				<div class="tab-pane fade row justify-content-md-center " id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
+				<div class="tab-pane fade show active row justify-content-md-center " id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
 					<div class="border border-secondary border-top-0 border-left-0 border-right-0 py-2 pl-3">
 						<h3 class="font-weight-bold">프로젝트 소개</h3>
 						<div class ="intro_bg row " style='background-image:url(${contextpath}/img/hosang/bg2.jpg);'>
@@ -119,7 +119,7 @@
 				<!-- FAQ 끝 -->
 				
 				<!-- 문의하기 시작 -->
-				<div class="tab-pane fade  show active" id="list-contactUs" role="tabpanel" aria-labelledby="list-contactUs-list" style="height: 600px;">
+				<div class="tab-pane fade" id="list-contactUs" role="tabpanel" aria-labelledby="list-contactUs-list" style="height: 600px;">
 					<div class="border border-secondary border-top-0 border-left-0 border-right-0 py-2 pl-3">
 						<h3 class="font-weight-bold mb-3">문의하기</h3>
 						<h5 class="text-secondary">서비스 이용에 관한 문의하항이나 개선 아이디어를 제안해 주세요</h5>
