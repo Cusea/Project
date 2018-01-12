@@ -5,3 +5,11 @@ element.style {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+.q_textarea{
+	display: inline-block;
+}
+
+.modal_title_box{
+	font-size: large;
+}

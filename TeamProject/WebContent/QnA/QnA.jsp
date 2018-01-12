@@ -17,8 +17,8 @@
 				아! 오사카, 후쿠오카만 가능해요.
 			</div>
 			<div class="search_box">
-				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" style="background-image: url(<%=path%>/img/QnA/search_icon.png)" value="">
-				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" style="background-image: url(<%=path%>/img/QnA/search_icon.png)">
+				<!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
 				<!-- <p>Search icon: <span class="glyphicon glyphicon-search"></span></p> -->
 				<div class="tags"></div>  <!-- 태그로 검색하니까 해논건가??? -->  
 			</div>
@@ -43,7 +43,7 @@
 		
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
-			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
+			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? ㅇㅇ -->
 				<div class="user_img" style="background-image: url(<%=path%>/img/QnA/작은표범.png)"></div>
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
@@ -53,6 +53,7 @@
 					<div class="content"><pre>내용: 맛집 위주로 추천해주세요.</pre></div>
 					<div class="tag_box">
 						<div class="tag">오사카</div>
+						<div class="tag">라멘</div>
 						<div class="clear"></div>  <!-- clear는 뭐여??? -->
 					</div>
 					<div class="info_box">
@@ -63,10 +64,10 @@
 						<div class="clear"></div>  <!-- ??? -->
 					</div>
 				</div>
-				<div class="clear"></div>  <!-- 뭔가 끝날때마다 clear 해주네??? -->
+				<!-- <div class="clear"></div> -->  <!-- 뭔가 끝날때마다 clear 해주네??? -->
 			</a>
 		</div>
-
+		<!-- 질문리스트 샘플 end -->
 		
 		<!-- 여기에 qa_list가 질문하기를 등록하면 이렇게 생성되야됨. box사이즈에 맞게(질문 한줄, 내용 한줄...) 클릭해야 전체 내용이 보이게 -->
 		<div class="qa_list">
@@ -90,13 +91,72 @@
 				</div>
 				<div class="clear"></div>  <!-- 뭔가 끝날때마다 clear 해주네??? -->
 			</a>
-			<div class="more_btn" onclick="get_list('2');$(this).remove();">더보기</div>  <!-- 더보기 버튼 -->
+			<div class="more_btn" onclick="get_list('2');$(this).remove();">더보기</div>  <!-- 더보기 버튼 누를때마다 get_list('up') --> <!-- $(this).remove(); 이건뭐임??? -->
 		</div>  <!-- qa list end -->
 			
 	</div>  <!-- wrap qa end -->
 	
 	
+<!-- The Modal -->
+<!-- fade (스윽~ 하고 나오는거) -->
+<div class="modal fade" id="myModal">  
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		<div class="modal-header">
+		<div align="left">질문하기 : </div>
+			<input type="text" class="qa_title_text" placeholder="제목"> 
+			<button type="button" class="close" data-dismiss="modal">
+				      &times;
+			</button>
+		</div>
+		<div class="modal-body">
+				내용 : <textarea class="q_textarea" rows="10" cols="30">
+					
+					 </textarea>
+		</div>
+		<div class="modal-footer">
+			<div class="modal_footer_tagText">  <!-- modal-footer  -->
+				태그 :  <input type="text" placeholder="태그입력"> 
+			</div>
+			<button type="button" class="btn btn-primary q_btn" data-dismiss="modal">완료</button>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	/* var qs = $('.qa_search').val();
 	
+	$(document).ready(function(){
+		$('.qa_search').change(function(){
+			alert('???: '+ qs);
+		});
+	}); */
+	
+	$(document).ready(function(){
+		
+		$('.qa_search').keyup(function(e){
+			$('.qa_title').text(lang_ex(lang.tag_search_result_msg,$('.qa_search').val()));
+		});
+		
+	    $("input[class=qa_search]").keydown(function (key) {
+	        if(key.keyCode == 13){  //키가 13이면 실행 (엔터는 13)
+	            searchBook();
+	        }
+	    });
+	    searchBook = function (){
+	        //검색 찾는 로직 구현
+	        if($("input[class=qa_search]").val().trim() == ""){
+	        	alert("검색어를 입력해 주세요.")
+	        }else{
+	        	alert($("input[class=qa_search]").val() + "<- 를 입력 하셨지만 아직 구현중.. 검색하면 태그로 검색결과 뜨고 검색한 태그로 질문박스 나열 하기..");
+	        }
+	    };
+	});
+</script>
+
 	
 	
 	<%-- <!-- 모달을 만들어보자 (질문하기) -->
@@ -145,28 +205,6 @@
 	
 	
 
-<!-- The Modal -->
-<!-- fade (스윽~ 하고 나오는거) -->
-<div class="modal fade" id="myModal">  
-	<div class="modal-dialog modal-sm">
-		<div class="modal-content">
-		<div class="modal-footer">
-			<button type="button" class="close" data-dismiss="modal">모달입니다 엑스표 ->> &times;</button>
-		</div>
-		<div class="modal_title_box">
-			<input type="text"> 제목 입니다.
-		</div>
-		<div class="modal_body_box">
-			<textarea rows="10" cols="30">
-				내용 입니다. 
-			</textarea>
-		</div>
-		<div class="modal_footer_box">
-			<input type="text"> 태그 넣을건데
-		</div>
-		</div>
-	</div>
-</div>
 
 
 

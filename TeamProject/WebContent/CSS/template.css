@@ -277,12 +277,13 @@
 	}
     
     
+    .qa_title_text{
+    	align-content: center;
+    }
     
-    
-    
-    
-    
-    
+    modal_footer_tagText{
+    	justify-content: center;
+    }
     
     
     
