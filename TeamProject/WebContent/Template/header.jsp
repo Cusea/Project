@@ -41,7 +41,7 @@
 			</ul>
 			<ul class="navbar-nav al">
 				<li class="nav-item active align-center admin">
-					<a class="admin btn btn-success nav-link mr-2 mt-2" role="button" href='${contextpath}/index.jsp' aria-pressed="true">
+					<a class="admin btn btn-success nav-link mr-2 mt-2" role="button" href='${contextpath}/Admin/main.jsp' aria-pressed="true">
 						관리자 page로
 					</a>
 				</li>
