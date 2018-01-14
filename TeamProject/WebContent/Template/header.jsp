@@ -21,6 +21,7 @@
 <link href='<c:url value="/CSS/kdh.css" />' rel="stylesheet">
 <link href='<c:url value="/CSS/lsh.css" />' rel="stylesheet">
 <link href='<c:url value="/CSS/yks.css" />' rel="stylesheet">
+<link href='<c:url value="/CSS/lhs.css" />' rel="stylesheet">
 </head>
 <body>
 <c:set var="contextpath" value="${pageContext.request.contextPath}" />
