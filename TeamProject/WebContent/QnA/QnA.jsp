@@ -1,13 +1,14 @@
 <%@ page  pageEncoding="UTF-8"%>
-
-	<div class="wrap qa col-sm-12 text-center jumbotron">  <!-- jumbotron (뭔가 회색배경을 주는데?) -->
+	<div class="wrap qa col-sm-12 text-center jumbotron container">  <!-- jumbotron (뭔가 회색배경을 주는데?) -->
 		<div class="qa_nav_box col-sm-12 text-center">
 			<a href="/TeamProject/index.jsp">일본여행사이트</a> >
 			<span>QnA</span>
 		</div>
 		
 		<hr>
+
 		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(${contextpath}/img/QnA/QnA.jpg)">
+
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -17,8 +18,8 @@
 				아! 오사카, 후쿠오카만 가능해요.
 			</div>
 			<div class="search_box">
-				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" value="">
-				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>  <!-- 돋보기가 안생기는데??? -->
+				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" style="background-image: url(${contextpath}/img/QnA/search_icon.png)">
+				<!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
 				<!-- <p>Search icon: <span class="glyphicon glyphicon-search"></span></p> -->
 				<div class="tags"></div>  <!-- 태그로 검색하니까 해논건가??? -->  
 			</div>
@@ -31,17 +32,22 @@
 			<div class="qa_mnu_line">
 				<!-- 가로막는 짝대기 하나 추가 -->
 			</div>
-			<div class="q_btn" onclick="et_modal('550px','500px','1','0','/modal/inquery','2','1');">  <!-- et_modal은 어딨는겨? (히든 되 있었네) -->
+			<button id="" type="button" class="btn btn-primary q_btn" data-toggle="modal" data-target="#myModal">
+	 	    	질문하기
+			</button>
+			<!-- <div class="q_btn" onclick="modal_box('550px','500px','1','0','/modal/inquery','2','1');">  et_modal은 어딨는겨? (히든 되 있었네)
 				 질문하기 
-			</div>
+			</div> -->
 			<div class="clear"></div>  <!-- clear 이건뭐여? -->
 		</div>  <!-- qa_mnu_box END -->
+		
 		
 		
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
 				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/얼굴.PNG)">회원사진</div>
+
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
@@ -50,6 +56,7 @@
 					<div class="content"><pre>내용: 맛집 위주로 추천해주세요.</pre></div>
 					<div class="tag_box">
 						<div class="tag">오사카</div>
+						<div class="tag">라멘</div>
 						<div class="clear"></div>  <!-- clear는 뭐여??? -->
 					</div>
 					<div class="info_box">
@@ -60,10 +67,10 @@
 						<div class="clear"></div>  <!-- ??? -->
 					</div>
 				</div>
-				<div class="clear"></div>  <!-- 뭔가 끝날때마다 clear 해주네??? -->
+				<!-- <div class="clear"></div> -->  <!-- 뭔가 끝날때마다 clear 해주네??? -->
 			</a>
 		</div>
-
+		<!-- 질문리스트 샘플 end -->
 		
 		<!-- 여기에 qa_list가 질문하기를 등록하면 이렇게 생성되야됨. box사이즈에 맞게(질문 한줄, 내용 한줄...) 클릭해야 전체 내용이 보이게 -->
 		<div class="qa_list">
@@ -87,16 +94,13 @@
 				</div>
 				<div class="clear"></div>  <!-- 뭔가 끝날때마다 clear 해주네??? -->
 			</a>
-			<div class="more_btn" onclick="get_list('2');$(this).remove();">더보기</div>  <!-- 더보기 버튼 -->
+			<div class="more_btn" onclick="get_list('2');$(this).remove();">더보기</div>  <!-- 더보기 버튼 누를때마다 get_list('up') --> <!-- $(this).remove(); 이건뭐임??? -->
 		</div>  <!-- qa list end -->
 			
 	</div>  <!-- wrap qa end -->
 	
-	<!-- 모달을 만들어보자 (질문하기) -->
-	<div class="et_modal" style="overflow: hidden;">
-		<!-- ??? -->
-	</div>
 	
+<<<<<<< HEAD
 	<!-- 질문하기 실제 창 (다른 페이지 에서 하는건가???) -->
 	<div class="modal_box">
 		<div class="title_box">
@@ -115,60 +119,74 @@
 					</div>
 					<div class="clear"></div>
 				</div>
-			</div>
-			<div class="inquery_box">
-				<div class="inquery_title">
-					내용
-				</div>
-				<div class="input_box">
-					<textarea name id cols="30" rows="10" class="inquery_content" maxlength="1000">
-					
-					</textarea>
-					<div class="clear"></div>
-					<div class="input_length" data-id="content" data-class="inquery_content" data-length="1000">
-						0/1000
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+=======
 	
 	
-	
-<!-- 질문하기를 모달로 이렇게 해야되는데??? -->	
-<div class="container">
-	<!-- Button to Open the Modal -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-	  Open modal
-	</button>
-	<!-- The Modal -->
-	<div class="modal fade" id="myModal">
-		<div class="modal-dialog modal-sm">
+<!-- The Modal -->
+<!-- form해야 button reset 됨. -->
+<form action="insert.do" method="post" name="updateForm">
+	<div class="modal fade" id="myModal">  
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal">모달입니다 엑스표 ->> &times;</button>
+			<div class="modal-header">
+			<div align="left" class="modal-header_qa">질문하기 : </div>
+				<input type="text" class="qa_title_text" placeholder="제목" maxlength="30" data-length="30"> 
+				<small>0/30</small>
+				<button type="button" class="close" data-dismiss="modal">
+					      &times;
+				</button>
+>>>>>>> 27129445d185e870addfeebac90614469b8cca25
+			</div>
+			<div class="modal-body">
+					내용 : <textarea class="q_textarea" rows="11" cols="60" maxlength="1000"></textarea>
+					<small>0/1000</small>
+			</div>
+			<div class="modal-footer">
+				<div class="modal_footer_tagText">  <!-- modal-footer  -->
+					태그 :  <input type="text" class="modal_footer_tagText" maxlength="30" placeholder="태그입력"> 
+					<small>0/30</small>
+				</div>
+				<button type="reset" class="btn btn-info"><small>초기화</small></button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">완료</button>
+			</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</form>
+<script>
+	/* var qs = $('.qa_search').val();
+	
+	$(document).ready(function(){
+		$('.qa_search').change(function(){
+			alert('???: '+ qs);
+		});
+	}); */
+	
+	$(document).ready(function(){
+		
+		// tag찾을때 자동완성 해주는거 만들기.
+		/* $('.qa_search').keyup(function(e){
+			$('.qa_title').text(lang_ex(lang.tag_search_result_msg,$('.qa_search').val()));
+		}); */
+		
+		//질문검색창에 엔터키 입력하면 searchBook() 실행.
+	    $("input[class=qa_search]").keydown(function (key) {
+	        if(key.keyCode == 13){  //keyCode == 13 == enterKey
+	            searchBook();
+	        }
+	    });
+	    searchBook = function (){
+	        //검색 찾는 로직 구현
+	        if($("input[class=qa_search]").val().trim() == ""){
+	        	alert("검색어를 입력해 주세요.")
+	        }else{
+	        	alert($("input[class=qa_search]").val() 
+	        			+ "<- 를 입력 하셨지만 아직 구현중.. 검색하면 태그로 검색결과 뜨고 검색한 태그로 질문박스 나열 하기..");
+	        }
+	    };
+	});
+</script>
+	
+	
+	
+	
