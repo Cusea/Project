@@ -14,6 +14,7 @@
 				일정, 장소, 교통 등에 관한 질문을 자유롭게 남겨보세요.<br>
 				저희 한빚 아니 일본여행 사이트에서 세계 각지를 방문한 여행자들이 도움을 드립니다.
 				아! 오사카, 후쿠오카만 가능해요.
+				
 			</div>
 			<div class="search_box">
 				<input type="text" class="qa_search" placeholder="오사카숙소, 후쿠오카여행, 오사카맛집" style="background-image: url(<%=path%>/img/QnA/search_icon.png)">
