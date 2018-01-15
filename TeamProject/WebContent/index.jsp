@@ -1,5 +1,4 @@
 <%@ page pageEncoding="UTF-8"%>
-	
 
 	<!-- header 아래 부분 -->
 	<div class="index_back_img" style='background-image:url(${contextpath}/img/hosang/japan.jpg);'>
