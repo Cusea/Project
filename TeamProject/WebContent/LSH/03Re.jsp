@@ -16,7 +16,22 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-	<h1>리 뷰</h1>
+	<div id="content">
+		<div class="content">
+			<div class="m_top">
+				<div class="review_tleft">정렬순서 : </div>
+				<div class="review_sort_box">
+					<select name id class="review_sort">
+						<option value="regdate">최신순</option>
+						<option value="name">이름순</option>
+					</select>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<div class="review_inner"></div>
+		</div>
+	</div>
 </div><!-- 바디끝 -->
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
