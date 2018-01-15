@@ -99,29 +99,6 @@
 			
 	</div>  <!-- wrap qa end -->
 	
-	
-<<<<<<< HEAD
-	<!-- 질문하기 실제 창 (다른 페이지 에서 하는건가???) -->
-	<div class="modal_box">
-		<div class="title_box">
-			<span id="title">질문하기</span>
-			<img src="${contextpath}/img/QnA/modal_close_btn.gif" class="modal_btn_close rounded" alt onclick="et_modal_close();">
-		</div>
-		<div class="modal_content">
-			<div class="inquery_box">
-				<div class="inquery_title">
-					제목
-				</div>
-				<div class="input_box">
-					<input type="text" class="inquery_subject" maxlength="30">
-					<div class="input_length" data-id="subject" data-class="inquery_subject" data-length="30">
-						0/30
-					</div>
-					<div class="clear"></div>
-				</div>
-=======
-	
-	
 <!-- The Modal -->
 <!-- form해야 button reset 됨. -->
 <form action="insert.do" method="post" name="updateForm">
@@ -135,7 +112,6 @@
 				<button type="button" class="close" data-dismiss="modal">
 					      &times;
 				</button>
->>>>>>> 27129445d185e870addfeebac90614469b8cca25
 			</div>
 			<div class="modal-body">
 					내용 : <textarea class="q_textarea" rows="11" cols="60" maxlength="1000"></textarea>
