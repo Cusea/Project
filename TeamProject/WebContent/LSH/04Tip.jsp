@@ -1,8 +1,8 @@
 <%@ page pageEncoding="UTF-8"%>
 
 <div id="my_top">
-	<div class="my_top_cover" style="background-image:url(${contextpath}/img/SH/top.jpg);" center center / cover no-repeat;">
-		<div class="my_top_title">클립보드</div>
+	<div class="my_top_cover" style="background-image:url(${contextpath}/img/SH/top4.jpg);" center center / cover no-repeat;">
+		<div class="my_top_title">여행Tip</div>
 	</div>
 	<div class="my_top_menu_box">
 		<div class="my_top_menu_bg"></div>
@@ -16,9 +16,7 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-	
-	
-	
+	<h1>여행 팁</h1>
 </div><!-- 바디끝 -->
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
