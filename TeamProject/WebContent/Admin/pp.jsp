@@ -15,18 +15,18 @@
 					<a class="nav-link" href="${contextpath}/Admin/spotupdate.jsp">여행정보 update 관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" data-toggle="collapse" href="#collapseBoardPP" aria-expanded="false" aria-controls="collapseBoard">
+					<a class="nav-link" data-toggle="collapse" href="#collapseBoardPP" aria-expanded="false" aria-controls="collapseBoard">
 						고객센터 관리
 					</a>
 					<div class="collapse" id="collapseBoardPP" >
 						<ul class="nav nav-pills flex-column nav-tabs" id="pp-tab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link " id="faqUpdate-tab" data-toggle="tab" href="#faqUpdate" role="tab" aria-controls="faqUpdate" aria-selected="false">
+								<a class="nav-link" id="faqUpdate-tab" data-toggle="tab" href="#faqUpdate" role="tab" aria-controls="faqUpdate" aria-selected="false">
 									FAQ 수정
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link " id="contactUsList-tab" data-toggle="tab" href="#contactUsList" role="tab" aria-controls="contactUsList" aria-selected="false">
+								<a class="nav-link" id="contactUsList-tab" data-toggle="tab" href="#contactUsList" role="tab" aria-controls="contactUsList" aria-selected="false">
 									문의하기 글 목록
 								</a>
 							</li>
