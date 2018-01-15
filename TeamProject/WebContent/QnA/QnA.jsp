@@ -6,9 +6,7 @@
 		</div>
 		
 		<hr>
-
-		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(${contextpath}/img/QnA/QnA.jpg)">
-
+		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(${contextpath}/img/QnA/qa_hbg.jpg)">
 			<div class="qa_title">
 				<mark>궁금하신 점이 있으신가요?</mark>
 			</div>
@@ -46,9 +44,8 @@
 		
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
-			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/작은표범.png)">회원사진</div>
-
+			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? ㅇㅇ -->
+				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/작은표범.png)"></div>
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
 				<!-- 유저 이미지 사진 -->
@@ -99,6 +96,9 @@
 		</div>  <!-- qa list end -->
 			
 	</div>  <!-- wrap qa end -->
+	
+	
+	
 	
 <!-- The Modal -->
 <!-- form해야 button reset 됨. -->
