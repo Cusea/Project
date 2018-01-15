@@ -13,12 +13,51 @@
 	<br><br>
 	</div>	
 	
-	<div class="border 1">
-			<h4>테이블</h4>
-	
-	
+	<div class="container">
+	<div class="clear"></div>
+	<div class="plan_title bg-success "  >
+				여행일			</div>
+	<div class="plan_day"  >
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				  <label class="btn btn-outline-info">
+				    <input type="checkbox" autocomplete="off"> 1일-3일
+				  </label>
+				  <label class="btn btn-outline-info">
+				    <input type="checkbox" autocomplete="off">4일-6일
+				  </label>
+				  <label class="btn btn-outline-info">
+				    <input type="checkbox" autocomplete="off"> 7일-9일
+				  </label>
+				  <label class="btn btn-outline-info">
+				    <input type="checkbox" autocomplete="off">10일-12일
+				  </label>
+				  <label class="btn btn-outline-info">
+				    <input type="checkbox" autocomplete="off"> 13일이상
+				  </label>
+                  </div>
+			</div>
+		<div class="plan_theme bg-success"  >
+				테마		</div>
+	<div class="plan_detail"  >
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				  <label class="btn btn-outline-warning">
+				    <input type="checkbox" autocomplete="off"> link1
+				  </label>
+				  <label class="btn btn-outline-warning">
+				    <input type="checkbox" autocomplete="off"> link2
+				  </label>
+				  <label class="btn btn-outline-warning">
+				    <input type="checkbox" autocomplete="off"> link3
+				  </label>
+				  <label class="btn btn-outline-warning">
+				    <input type="checkbox" autocomplete="off"> link4
+				  </label>
+				  <label class="btn btn-outline-warning">
+				    <input type="checkbox" autocomplete="off"> link5
+				  </label>
+				  </div>
 	</div>
-	
+	</div>
 	
 <div class="card-group">
   <div class="card">
