@@ -100,3 +100,47 @@
     border: 1px solid #f7870f;
     text-align: center;
 }
+.wrap {
+    width: 1092px;
+    margin: 0 auto;
+    position: relative;
+}
+.config_area {
+    width: 706px;
+    background: white;
+    border: 1px solid #bbbbbd;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.config_title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #363636;
+    border-bottom: 1px solid #bbbbbd;
+    padding-left: 22px;
+}
+.config_table {
+    margin: 20px 0px 20px 0px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.config_table .t_input {
+    height: 29px;
+    line-height: 29px;
+    border: 1px solid #c8c8ca;
+    width: 421px;
+    padding-left: 15px;
+}
+.config_table td.space {
+    height: 20px;
+    line-height: 0px;
+    font-size: 0px;
+}
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
+    visibility: hidden !important;
+}
