@@ -1,5 +1,4 @@
 <%@ page  pageEncoding="UTF-8"%>
-
 	<div class="wrap qa col-sm-12 text-center jumbotron container">  <!-- jumbotron (뭔가 회색배경을 주는데?) -->
 		<div class="qa_nav_box col-sm-12 text-center">
 			<a href="/TeamProject/index.jsp">일본여행사이트</a> >
@@ -39,6 +38,7 @@
 			</div> -->
 			<div class="clear"></div>  <!-- clear 이건뭐여? -->
 		</div>  <!-- qa_mnu_box END -->
+		
 		
 		
 		<!-- 질문리스트 샘플 -->
@@ -97,35 +97,38 @@
 	</div>  <!-- wrap qa end -->
 	
 	
+	
+	
 <!-- The Modal -->
-<!-- fade (스윽~ 하고 나오는거) -->
-<div class="modal fade" id="myModal">  
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		<div class="modal-header">
-		<div align="left">질문하기 : </div>
-			<input type="text" class="qa_title_text" placeholder="제목"> 
-			<button type="button" class="close" data-dismiss="modal">
-				      &times;
-			</button>
-		</div>
-		<div class="modal-body">
-				내용 : <textarea class="q_textarea" rows="10" cols="30">
-					
-					 </textarea>
-		</div>
-		<div class="modal-footer">
-			<div class="modal_footer_tagText">  <!-- modal-footer  -->
-				태그 :  <input type="text" placeholder="태그입력"> 
+<!-- form해야 button reset 됨. -->
+<form action="insert.do" method="post" name="updateForm">
+	<div class="modal fade" id="myModal">  
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			<div class="modal-header">
+			<div align="left" class="modal-header_qa">질문하기 : </div>
+				<input type="text" class="qa_title_text" placeholder="제목" maxlength="30" data-length="30"> 
+				<small>0/30</small>
+				<button type="button" class="close" data-dismiss="modal">
+					      &times;
+				</button>
 			</div>
-			<button type="button" class="btn btn-primary q_btn" data-dismiss="modal">완료</button>
-		</div>
+			<div class="modal-body">
+					내용 : <textarea class="q_textarea" rows="11" cols="60" maxlength="1000"></textarea>
+					<small>0/1000</small>
+			</div>
+			<div class="modal-footer">
+				<div class="modal_footer_tagText">  <!-- modal-footer  -->
+					태그 :  <input type="text" class="modal_footer_tagText" maxlength="30" placeholder="태그입력"> 
+					<small>0/30</small>
+				</div>
+				<button type="reset" class="btn btn-info"><small>초기화</small></button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">완료</button>
+			</div>
+			</div>
 		</div>
 	</div>
-</div>
-
-
-
+</form>
 <script>
 	/* var qs = $('.qa_search').val();
 	
@@ -137,12 +140,14 @@
 	
 	$(document).ready(function(){
 		
-		$('.qa_search').keyup(function(e){
+		// tag찾을때 자동완성 해주는거 만들기.
+		/* $('.qa_search').keyup(function(e){
 			$('.qa_title').text(lang_ex(lang.tag_search_result_msg,$('.qa_search').val()));
-		});
+		}); */
 		
+		//질문검색창에 엔터키 입력하면 searchBook() 실행.
 	    $("input[class=qa_search]").keydown(function (key) {
-	        if(key.keyCode == 13){  //키가 13이면 실행 (엔터는 13)
+	        if(key.keyCode == 13){  //keyCode == 13 == enterKey
 	            searchBook();
 	        }
 	    });
@@ -151,77 +156,13 @@
 	        if($("input[class=qa_search]").val().trim() == ""){
 	        	alert("검색어를 입력해 주세요.")
 	        }else{
-	        	alert($("input[class=qa_search]").val() + "<- 를 입력 하셨지만 아직 구현중.. 검색하면 태그로 검색결과 뜨고 검색한 태그로 질문박스 나열 하기..");
+	        	alert($("input[class=qa_search]").val() 
+	        			+ "<- 를 입력 하셨지만 아직 구현중.. 검색하면 태그로 검색결과 뜨고 검색한 태그로 질문박스 나열 하기..");
 	        }
 	    };
 	});
 </script>
-
-	
-	
-	<%-- <!-- 모달을 만들어보자 (질문하기) -->
-	<div class="et_modal" style="overflow: hidden;">
-		<!-- ??? -->
-	</div>
-	
-	<!-- 질문하기 실제 창 (다른 페이지 에서 하는건가???) -->
-	<div class="modal_box" style="overflow: hidden;">
-		<div class="title_box">
-			<span id="title">질문하기</span>
-			<img src="<%=path%>/img/QnA/modal_close_btn.gif" class="modal_btn_close rounded" alt onclick="et_modal_close();">
-		</div>
-		<div class="modal_content">
-			<div class="inquery_box">
-				<div class="inquery_title">
-					제목
-				</div>
-				<div class="input_box">
-					<input type="text" class="inquery_subject" maxlength="30">
-					<div class="input_length" data-id="subject" data-class="inquery_subject" data-length="30">
-						0/30
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-			<div class="inquery_box">
-				<div class="inquery_title">
-					내용
-				</div>
-				<div class="input_box">
-					<textarea name id cols="30" rows="10" class="inquery_content" maxlength="1000">
-					
-					</textarea>
-					<div class="clear"></div>
-					<div class="input_length" data-id="content" data-class="inquery_content" data-length="1000">
-						0/1000
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-		
-	</div> --%>
 	
 	
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
