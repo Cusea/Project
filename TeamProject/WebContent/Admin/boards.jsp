@@ -1,4 +1,5 @@
 <%@ page pageEncoding="UTF-8"%>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-4 col-md-3 d-none d-sm-block bg-light sidebar ">
