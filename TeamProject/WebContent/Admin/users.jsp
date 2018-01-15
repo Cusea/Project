@@ -140,6 +140,7 @@
 		</main>
 	</div>
 </div>
+
 <script>
 	$(".board_col").click(function(){
 		$("#iBoard").attr({
