@@ -47,7 +47,7 @@
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<a class="box" href="/ko/community/qa?srl=1">  <!-- 디비에 시퀀스로 번호별로 액션을 걸어 놓는 건가??? 여기에 자동으로 이줄이 생성 되는 건가??? -->
-				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/얼굴.PNG)">회원사진</div>
+				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/작은표범.png)">회원사진</div>
 
 				<%-- <img alt="<%=request.getContextPath()%>/img/QnA.jpg" src="이미지 내용"> --%>
 				<!-- <img alt class="user_img" src="/res/img/common/mobile/img_profile.png" onerror="this.src='/res/img/common/mobile/img_profile.png";> -->
