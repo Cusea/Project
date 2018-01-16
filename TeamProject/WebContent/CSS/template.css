@@ -183,25 +183,6 @@
 		margin-left:17px;
 		margin-right:17px;
 	}
-	/* 질문하기 버튼 */
-    .q_btn{    
-		float:right;
-		/* color:white;
-		padding-left:20px;
-		padding-right:20px;
-		line-height:30px;
-		height:30px;
-		font-size:13px;
-		text-align:center;
-		border:1px solid #f7870f;
-		background:#ff9320;
-		display:inline-block;
-		cursor:pointer; */
-		margin-top:9px;
-	}  
-	.qa_list{
-		padding-bottom:10px;
-	}
 	
 	.tag_box {  /* tag 모아놓게 width 100% 주는군  */
     width: 100%;
@@ -231,36 +212,6 @@
 		background:white;
 	}
 	
-	.user_img{  /* 질문한 회원사진 */
-		width:80px;
-		height:80px;
-		float:left;
-		border-radius:50%;
-		margin-right:15px;
-	}
-	
-	/* .content_box {  질문 게시판 안에 내용들 box 인데 왜 다 꺠지나??
-	    width: 519px;
-	    height: 100%;
-	    float: left;
-	} */
-	
-	.clear {  /* 이건 뭘까..?? 이걸해야 태그박스와  */
-	    clear: both;
-	}
-	
-	.more_btn{  /* 더보기 버튼 */
-		width:100%;
-		background:white;
-		text-align:center;
-		height:33px;
-		line-height:33px;
-		border:1px solid #dbdbdb;
-		font-size:14px;
-		color:#555555;
-		cursor:pointer;
-	}
-    
     .info_box {  /* 게시판 이름,날짜,댓글수 box */
 	    width: 100%;
 	    padding-top: 10px;
@@ -289,18 +240,6 @@
 	    float: left;
 	}
     
-    .a_cnt {  /* 댓글수 */
-	    float: right;
-	    color: #004085;
-	    font-size: 17px;
-	    padding-left: 29px;
-	    background: url(/img/QnA/qa_btn.gif) no-repeat;  /* 댓글 이미지 (반복없음) */
-	    background-position: center left;  /* 센터 래프트?? 중앙 왼쪽? */
-	    height: 22px;
-	    line-height: 22px;
-	}
-    
-    
     .qa_title_text{
     	align-content: center;
     }
@@ -308,3 +247,79 @@
     modal_footer_tagText{
     	justify-content: center;
     }
+    
+    
+    /* 질문한 회원사진 */
+.user_img{  
+	width:80px;
+	height:80px;
+	float:left;
+	border-radius:50%;
+	margin-right:15px;
+}
+    
+
+/* 질문목록 사이 간격 */
+.qa_list{
+	padding-bottom:20px;
+}
+
+/* 이건 뭘까..?? 이걸해야 태그박스와  */
+.clear {  
+    clear: both;
+}
+
+/* 더보기 버튼 */
+.more_btn{  
+	width:100%;
+	background:white;
+	text-align:center;
+	height:33px;
+	line-height:33px;
+	border:1px solid #dbdbdb;
+	font-size:14px;
+	color:#555555;
+	cursor:pointer;
+}
+
+/* 질문하기 버튼 */
+.q_btn{    
+	float:right;
+	margin-top:9px;
+}  
+
+/* 댓글수 */
+
+.a_cnt {  
+   float: right;
+   color: #004085;
+   font-size: 17px;
+   padding-left: 29px;
+   background: url(/img/QnA/qa_btn.gif) no-repeat;  /* 댓글 이미지 (반복없음) */
+   background-position: center left;  /* 센터 래프트?? 중앙 왼쪽? */
+    height: 22px;
+    line-height: 22px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
