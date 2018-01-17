@@ -11,7 +11,7 @@
 		<hr>
 		<div class="qa_header_box col-sm-12 text-center" style="background-image: url(${contextpath}/img/QnA/qa_hbg.jpg)">
 			<div class="qa_title">
-				<mark>궁금하신 점이 있으신가요?</mark>
+				<marquee behavior="alternate" scrolldelay="120" direction="left"><mark>궁금하신 점이 있으신가요?</mark></marquee>
 			</div>
 			<div class="qa_desc">
 				일정, 장소, 교통 등에 관한 질문을 자유롭게 남겨보세요.<br>
@@ -40,7 +40,7 @@
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<div class="box">
-				<a class="q_num_box" href="/ko/community/qa?srl=1">i번째 질문게시판</a>  <!-- 노란줄 거슬려서 바꿈. -->
+				<a class="q_num_box" href="ClickQnA.jsp">i번째 질문게시판</a>  <!-- 경로로 왜 안가는 것임??? -->
 				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/작은표범.png)"></div>
 				<div class="content_box"> 
 					<div class="subject">제목: 오사카 추천좀요</div>
