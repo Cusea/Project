@@ -203,14 +203,7 @@
     margin-right: 4px;
 	}
 	
-	.box{  /* qa box */
-		display:block;
-		width:100%;
-		margin-bottom:20px;
-		padding:20px;
-		box-shadow:1px 1px 3px rgba(150,0,0,0.20);
-		background:white;
-	}
+	
 	
     .info_box {  /* 게시판 이름,날짜,댓글수 box */
 	    width: 100%;
@@ -302,7 +295,49 @@
 }
     
     
-    
+.btn:hover{
+	color: gray;
+}
+
+#qa_detail{
+	padding-top: 20px;
+}
+
+.tag_box{
+	border-bottom: solid 1px; 
+}
+
+/* QnA 게시판 */
+.box{  
+	display:block;
+	width:100%;
+	margin-bottom:20px;
+	padding:20px;
+	box-shadow:1px 1px 3px rgba(150,0,0,0.20);
+	background:white;
+}
+
+/* Q 게시판 */
+.box_q{  
+	display:block;
+	width:100%;
+	margin-bottom:20px;
+	padding:20px;
+	box-shadow:1px 1px 3px rgba(150,0,0,0.20);
+	background:white;
+}
+
+element.style {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* modal 내용입력창 */
+.q_textarea{
+	display: inline-block;
+}
+
     
     
     

@@ -40,7 +40,7 @@
 		<!-- 질문리스트 샘플 -->
 		<div class="qa_list">
 			<div class="box">
-				<a class="q_num_box" href="ClickQnA.jsp">i번째 질문게시판</a>  <!-- 경로로 왜 안가는 것임??? -->
+				<a class="q_num_box" href="${contextpath}/QnA/DetailQnA.jsp">i번째 질문게시판</a>  <!-- 경로로 왜 안가는 것임??? -->
 				<div class="user_img" style="background-image: url(${contextpath}/img/QnA/작은표범.png)"></div>
 				<div class="content_box"> 
 					<div class="subject">제목: 오사카 추천좀요</div>
@@ -121,6 +121,9 @@
 		</div>
 	</div>
 </form>
+
+
+
 <script>
 	$(document).ready(function(){
 		// tag찾을때 자동완성 해주는거 만들기.
