@@ -11,9 +11,9 @@
 		<div class="col-3 float-right">
 			<ul class="row list-inline align-center">
 			<li class="col-sm-4">
-				<div >
+				<div ><a href="#review">
 				<img class="rounded-circle bg-secondary" alt="리뷰" src="${contextpath}/img/yks/icons/spot_review_btn.png">
-				</div>
+				</a></div>
 				<div class="d-block"><small>리뷰쓰기</small></div>
 			</li>
 			<li class="col-sm-4">
@@ -31,8 +31,11 @@
 			</ul>
 
 		</div>
+		
 	</header>
-	<div class="row">
+	<!-- 왼쪽 --------------------------------------------------------------------------->
+	<!-- 사진 -->
+	<div class="row card-deck">
 		<div class="col-sm-9 main">
 			<div class="d-block w-50 card">
 				<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -57,21 +60,29 @@
 					</a>
 				</div>
 			</div>
-			<div class="card">간략정보sdjhfljskhd;flk<br>shd;flhskd;hflhsdf;klshd;klhfsd
+<!-- 정보  ------------------------------------------------------------------------------->
+			<div class="card">간략정보~~~~~~~~~~~~~~~~<br>~~~~~~~~~~<br>~~~~~~~~~~~~~~~~~~~
 			
 			</div>
-			<div class="card">설명sdjhfkjlshdf;sdjhf;lks<br>hdfklhsdjlhfshdjhfjsdhjjhsdhfsdj
+			<div class="card">설명~~~~~~~~``~~~<br>~~~~~~~~~```~<br>~~~~~~~~~~~~~<br><br><br><br><br><br><br>~~~~~~~~~<br>11111111~~~<br>~~~~~~~~~~~~~
 			
 			</div>
+<!----커뮤니티(리뷰&qna)------------------------------------------------------------------->
 			<div class="card">
-				<ul class="nav nav-tabs">
-			    	<li class="active col"><a data-toggle="tab" href="#review">리뷰</a></li>
-			    	<li class="col"><a data-toggle="tab" href="#qna">Q&A</a></li>
-			  	</ul>
+				<div class="nav nav-pills">
+			    	<a class="nav-link col active" data-toggle="tab" href="#review">리뷰</a>
+			    	<a class="nav-link col" data-toggle="tab" href="#qna">Q&A</a>
+			  	</div>
 			  	<div class="tab-content">
-				    <div id="review" class="tab-pane fade in active">
-				      <h3>이름</h3>
-				      <p>내용내용내용내용</p>
+				    <div id="review" class="tab-pane fade show active">
+				      <ul class="list-group">
+				      	<li class="list-group-item">11</li>
+				      	<li class="list-group-item">22</li>
+				      	<li class="list-group-item">33</li>
+				      	<li class="list-group-item">44</li>
+				      	<li class="list-group-item">55</li>
+				      	<li class="list-group-item">66</li>
+				      </ul>
 				    </div>
 				    <div id="qna" class="tab-pane fade">
 				      <h3>ㅇㅇㄹㅇㄹ</h3>
@@ -81,11 +92,30 @@
 			</div>
 			<div>블로그</div>
 		</div>
+<!-- 오른쪽-------------------------------------------------------------------------- -->
 		<div class="col-sm-3 right">
-			<div>맵</div>
-			<div>여행팁</div>
-			<div>음식점</div>
-			<div>관광명소</div>
+			<div class="card">
+				<div id="map-body" style="width:243px;height:243px"></div>
+				<ul class="list-group">인근의 클립장소
+					<li class="list-group-item">dlkfljkasdjf</li>
+				</ul>
+			</div>
+			<div class="card">여행팁</div>
+			<div class="card">음식점</div>
+			<div class="card">관광명소</div>
 		</div>
 	</div>
 </div>
+
+<script>
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map-body'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 11
+  });
+}
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPPCQRIoQIAN_I1d5l0b1oveSd1j_2J_U&callback=initMap">
+</script>
